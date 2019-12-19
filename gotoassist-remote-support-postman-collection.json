@@ -1,0 +1,761 @@
+{
+    "id": "aa68fc521aa3d2385558ba49138f5fbb",
+    "name": "GoToAssist Remote Support",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "8b1978477a405cb3823f25d4b4659286",
+            "name": "Partner-System Link Info",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/systemLinks",
+            "description": "This method retrieves all partner-system links that are registered for a given domain. These links are used by GoToAssist to make calls back to the partner system to enable the creation of tickets during support sessions.\n\n  Request Parameters                    \n                      \n    field        data type      description    \n    systemDomain        string      The domain name of the partner system.    \n                      \n\n\n  Response Parameters: (* Optional)                  \n       ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "systemDomain",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "5210ca6d1ef5824cbd974683c48f08d9",
+            "name": "Partner-System Links",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/systemLinks",
+            "description": "This method creates system links, which allows the partner system to enable the creation of objects during attended support sessions by providing certain information to GoToAssist. If the partner system does not call this method, then the corresponding functionality in GoToAssist will be disabled automatically. Note: The partner system should call this method after a user has authenticated via OAuth.\r\n                    \r\n    field      value      description    \r\n    \"systemName\"      \"The Com",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "a6041851ecb1be49051f82bdcab3fda3",
+            "name": "Get Tickets",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/",
+            "description": "Retrieves a query-able set of tickets for a specific partner system.\n\n                                                         \nRequest Parameters\n                          \n    field      data type      description    \n    userToken      string      The token identifying and authenticating the user in the partner system that this object is being created on behalf of this user.    \n\n\nQuery Parameters (* Optional)\n\n    field      data type      description    \n    q *      string      A query str",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "e452a99205e5e9ed88ac36eebbf2f7b3",
+            "name": "Associate Ticket",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/",
+            "description": "Associates a ticket for a particular partner with a current session.\n\n  Request Parameters:                  \n                    \n    field      data type      description    \n    sessionId      string      The unique ID of the session to associate with the new partner object.    \n    userToken      string      The token identifying and authenticating the user in the partner system that this object is being created on behalf of this user.    \n    partnerObject      string      The partner objec",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "1df5b5c8cb02aebf1f3dfa7578eaabad",
+            "name": "Create Ticket",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/",
+            "description": "Creates a new ticket connecting the agent's system with the partner system for a specific issue.\n\n  Request Parameters: (* Optional)                  \n                    \n    field      data type      description    \n    sessionId      string      The unique ID of the session to associate with the new partner object.    \n    userToken      string      The token identifying and authenticating the user in the partner system that this object is being created on behalf of this user.    \n    title  ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "862519ddd74b62016bef7e5689bfd29b",
+            "name": "Download Recordings",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/archive\/recordings\/urls[&{attribute}={readyForDownloadRecordingId}]",
+            "description": "This method retrieves download links for a list of recordings. Each recording returns a link to the MP4 file, the .events file and the thumbnail. If a recording is not available for download then it will be omitted from the returned list. The archiving script may use the returned URLs to download each resource for the recording. The URLs will be valid for at least 48 hours. The URL contains a large random number so that the URL for recordings cannot be guessed. The response includes the recordin",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "attribute",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "readyForDownloadRecordingId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "81529a2b89fba7bbdc6cf24c02e4a29e",
+            "name": "Get Companies",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/companies",
+            "description": "This method retrieves information about the companies that the authenticated user has access to.\n\n                    \n  Query Parameters (all are optional)                  \n    q      string      A search query to filter the returned records. Performs a contains check on companyName    \n    limit      integer      The maximum number of records to be fetched. Default limit is 50. Valid range is 1 to 50. Greater than 50 results in bad request.    \n    offset      number      Zero based offset fo",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "19fe3ad3f402088b40d47196cda66e2d",
+            "name": "Get All Sessions",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/sessions",
+            "description": "This method retrieves detailed information about all current or previous support sessions (either attended or unattended) for a specified date range. Information about sessions that are complete may only be available for a limited period of time after the end of the session (currently, the information is available for at least 30 days). The session must have been hosted from an account or company that the authenticated user has access to.\n\n  Request Parameters                    \n               ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sessionType",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromTime",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toTime",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c00a7b6c6b43b4a061199c4f62dad6b",
+            "name": "Start Screen Sharing Session",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/sessions",
+            "description": "This method creates a new screen sharing support session (either attended or unattended) by generating a URL that automatically launches technicians into a new session when clicked. If a machineUuid request parameter is specified, an unattended support session will be created; if it is not specified, then an attended session will be created. See \"Request Parameters\" for more information. Note: The locale of the session start dialog will be based upon the technician\u2019s locale setting within GoTo",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "31d67a0d119519421962b6db07f80899",
+            "name": "Available Recordings",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/archive\/recordings",
+            "description": "This method retrieves a list of all available recordings on the account. Only recordings which are available for transcoding or downloading will be returned. The recording IDs are always returned in the order in which the recordings were started (i.e., startTime order). The request must contain one or more of the following: accountKey, userKey or companyId. The list of recordings can be filtered by the request parameters listed below.\n\nNote: Session recording must be enabled on the account in or",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "a0e9be03450ecffbae6310d2fbdf38d9",
+            "name": "Start Attended Session in Browser",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/session",
+            "description": "This method allows a partner system to launch an attended support session within a browser window. This API does not require authentication, so the technician will be prompted to enter their credentials when they run the GoToAssist Expert desktop application for the first time. Since the technician is not required to navigate to a URL, no API is implemented to create the session. Note: This method was formerly named \"Create Attended Session in browser,\" but has been renamed.\n\n  Request Parameter",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sessionType",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "fd153df5fd1540aa8290876b63965924",
+            "name": "Get Screen Sharing Session Info",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/sessions\/{sessionId}",
+            "description": "This method retrieves detailed information about a current or previous support session (either attended or unattended) based on the sessionID or sessionToken. \u201csessionToken\u201d is returned in response of create screen-sharing session API. Information about sessions that are complete may only be available for a limited period of time after the end of the session (currently, the information is available for at least 30 days). The session must have been hosted from an account or company that the a",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sessionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "233c0c3e7e13651d2e9b4e326569bba9",
+            "name": "Transcode Recordings",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/archive\/recordings\/transcode\/{readyForTranscodeRecordingIds}",
+            "description": "This method requests that a list of recordings be transcoded; once the API passes successfully, transcoding will be initiated for each of the recordings in the list. A result of \u201c204\u201d will be returned, regardless of the current state of the recordings (i.e., even if they are already transcoded). No more than 500 recordings can be transcoded at once.\n\nNote: Session recording must be enabled on the account in order to use this API method. To enable session recording, log in at https:\/\/app.goto",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "readyForTranscodeRecordingIds",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "c93569259fe50637b493ddf2a090a734",
+            "name": "Get WebChat Transcript Info",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/sessions\/{sessionId}\/events",
+            "description": "Get information about a current or previous web-chat session based upon the sessionID. The session must have been run within an account or company that the authenticated user has access to.\n\n  Response Parameters                    \n                      \n    field        data type      description    \n    sessionId        string      The unique ID of this session    \n    startTime        ISO 8601 format*      The start time of web-chat session    \n    endTime        ISO 8601 format*      The en",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sessionId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "0205ca4e82d0215ac5cb18814d974da0",
+            "name": "Get Machines",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/companies\/{companyId}\/machines",
+            "description": "This method retrieves information about the unattended machines associated with a specified company.\n\n  Response Parameters                    \n                      \n    field        data type      description    \n    totalNumMachines        integer      Number of machines returned.    \n    machines        map      Map of machines matching the search criteria.    \n    machineUuid        string      Un-attended machine uuid.    \n    machineName        string      Name of the un-attended machine.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        },
+        {
+            "id": "56f530cb612e3a57131ec08a96fc0ff1",
+            "name": "Mark Recordings as Archived",
+            "url": "httpsapi.getgo.com\/G2A\/rest\/v1\/archive\/recordings\/archived\/{recordingIDs}",
+            "description": "This method marks a list of recordings as archived by setting their archived flag to \u201ctrue.\u201d No more than 500 recordings can be marked as archived once.\n\nNote: Session recording must be enabled on the account in order to use this API method. To enable session recording, log in at https:\/\/app.gotoassist.com (link is external) and go to Configure > GoToAssist Settings > Enable Session Recording check box.\n\n  Request Parameters                    \n                      \n    field        data ty",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Accept",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recordingIDs",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aa68fc521aa3d2385558ba49138f5fbb",
+            "rawModeData": ""
+        }
+    ]
+}
