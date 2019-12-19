@@ -1,0 +1,580 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "GoToAssist Remote Support",
+        "description": "# Setup Instructions\r\n[GoToAssist Remote Support API Documentation](https:\/\/goto-developer.logmeininc.com\/api\/gotoassist-rs-api)\r\n\r\n### Environment Template\r\n1. **Choose the \"GoToAssist RS\" template** on the **environment dropdown menu** (top right corner of the window)\r\n2. **Click on the EYE icon (quick look)** right next to the environment dropdown box, then **click on EDIT** right next to the environment's name\r\n3. **Fill the environment variables *client_id* and *client_secret*** from your account. You can retrieve these by creating a new App on the [Developer Center](https:\/\/goto-developer.logmeininc.com\/user\/me\/apps).\r\n\r\n### OAuth 2.0\r\n1. Make sure the GoToAssist RS environment is selected on the dropdown box on top right of the main screen.\r\n2. Right-click the collection on the left bar\r\n3. Click on **Edit**\r\n4. Click on **Authorization Tab**\r\n5. Click on **Get New Access Token**\r\n6. Fill the form with the variables below. They will be pulled automatically from the Environment t",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.getgo.com\/G2A\/rest\/v1"
+    ],
+    "paths": {
+        "\/systemLinks": {
+            "get": {
+                "summary": "Partner-System Link Info",
+                "description": "This method retrieves all partner-system links that are registered for a given domain. These links are used by GoToAssist to make calls back to the partner system to enable the creation of tickets during support sessions.\n\n  Request Parameters                    \n                      \n    field        data type      description    \n    systemDomain        string      The domain name of the partner system.    \n                      \n\n\n  Response Parameters: (* Optional)                  \n       ",
+                "operationId": "SystemLinksGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "systemDomain",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Partner-System Links",
+                "description": "This method creates system links, which allows the partner system to enable the creation of objects during attended support sessions by providing certain information to GoToAssist. If the partner system does not call this method, then the corresponding functionality in GoToAssist will be disabled automatically. Note: The partner system should call this method after a user has authenticated via OAuth.\r\n                    \r\n    field      value      description    \r\n    \"systemName\"      \"The Com",
+                "operationId": "SystemLinksPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/": {
+            "get": {
+                "summary": "Get Tickets",
+                "description": "Retrieves a query-able set of tickets for a specific partner system.\n\n                                                         \nRequest Parameters\n                          \n    field      data type      description    \n    userToken      string      The token identifying and authenticating the user in the partner system that this object is being created on behalf of this user.    \n\n\nQuery Parameters (* Optional)\n\n    field      data type      description    \n    q *      string      A query str",
+                "operationId": "UnnammedEndpointGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "userToken",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Associate Ticket",
+                "description": "Associates a ticket for a particular partner with a current session.\n\n  Request Parameters:                  \n                    \n    field      data type      description    \n    sessionId      string      The unique ID of the session to associate with the new partner object.    \n    userToken      string      The token identifying and authenticating the user in the partner system that this object is being created on behalf of this user.    \n    partnerObject      string      The partner objec",
+                "operationId": "UnnammedEndpointPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create Ticket",
+                "description": "Creates a new ticket connecting the agent's system with the partner system for a specific issue.\n\n  Request Parameters: (* Optional)                  \n                    \n    field      data type      description    \n    sessionId      string      The unique ID of the session to associate with the new partner object.    \n    userToken      string      The token identifying and authenticating the user in the partner system that this object is being created on behalf of this user.    \n    title  ",
+                "operationId": "UnnammedEndpointPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/archive\/recordings\/urls[&{attribute}={readyForDownloadRecordingId}]": {
+            "get": {
+                "summary": "Download Recordings",
+                "description": "This method retrieves download links for a list of recordings. Each recording returns a link to the MP4 file, the .events file and the thumbnail. If a recording is not available for download then it will be omitted from the returned list. The archiving script may use the returned URLs to download each resource for the recording. The URLs will be valid for at least 48 hours. The URL contains a large random number so that the URL for recordings cannot be guessed. The response includes the recordin",
+                "operationId": "ArchiveRecordingsUrlsAPIGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "attribute",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "readyForDownloadRecordingId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/companies": {
+            "get": {
+                "summary": "Get Companies",
+                "description": "This method retrieves information about the companies that the authenticated user has access to.\n\n                    \n  Query Parameters (all are optional)                  \n    q      string      A search query to filter the returned records. Performs a contains check on companyName    \n    limit      integer      The maximum number of records to be fetched. Default limit is 50. Valid range is 1 to 50. Greater than 50 results in bad request.    \n    offset      number      Zero based offset fo",
+                "operationId": "CompaniesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/sessions": {
+            "get": {
+                "summary": "Get All Sessions",
+                "description": "This method retrieves detailed information about all current or previous support sessions (either attended or unattended) for a specified date range. Information about sessions that are complete may only be available for a limited period of time after the end of the session (currently, the information is available for at least 30 days). The session must have been hosted from an account or company that the authenticated user has access to.\n\n  Request Parameters                    \n               ",
+                "operationId": "SessionsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sessionType",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "fromTime",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "toTime",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Start Screen Sharing Session",
+                "description": "This method creates a new screen sharing support session (either attended or unattended) by generating a URL that automatically launches technicians into a new session when clicked. If a machineUuid request parameter is specified, an unattended support session will be created; if it is not specified, then an attended session will be created. See \"Request Parameters\" for more information. Note: The locale of the session start dialog will be based upon the technician\u2019s locale setting within GoTo",
+                "operationId": "SessionsPost2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/archive\/recordings": {
+            "get": {
+                "summary": "Available Recordings",
+                "description": "This method retrieves a list of all available recordings on the account. Only recordings which are available for transcoding or downloading will be returned. The recording IDs are always returned in the order in which the recordings were started (i.e., startTime order). The request must contain one or more of the following: accountKey, userKey or companyId. The list of recordings can be filtered by the request parameters listed below.\n\nNote: Session recording must be enabled on the account in or",
+                "operationId": "ArchiveRecordingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userKey",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/session": {
+            "get": {
+                "summary": "Start Attended Session in Browser",
+                "description": "This method allows a partner system to launch an attended support session within a browser window. This API does not require authentication, so the technician will be prompted to enter their credentials when they run the GoToAssist Expert desktop application for the first time. Since the technician is not required to navigate to a URL, no API is implemented to create the session. Note: This method was formerly named \"Create Attended Session in browser,\" but has been renamed.\n\n  Request Parameter",
+                "operationId": "SessionGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sessionType",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/sessions\/{sessionId}": {
+            "get": {
+                "summary": "Get Screen Sharing Session Info",
+                "description": "This method retrieves detailed information about a current or previous support session (either attended or unattended) based on the sessionID or sessionToken. \u201csessionToken\u201d is returned in response of create screen-sharing session API. Information about sessions that are complete may only be available for a limited period of time after the end of the session (currently, the information is available for at least 30 days). The session must have been hosted from an account or company that the a",
+                "operationId": "SessionsBySessionIdGet2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/archive\/recordings\/transcode\/{readyForTranscodeRecordingIds}": {
+            "post": {
+                "summary": "Transcode Recordings",
+                "description": "This method requests that a list of recordings be transcoded; once the API passes successfully, transcoding will be initiated for each of the recordings in the list. A result of \u201c204\u201d will be returned, regardless of the current state of the recordings (i.e., even if they are already transcoded). No more than 500 recordings can be transcoded at once.\n\nNote: Session recording must be enabled on the account in order to use this API method. To enable session recording, log in at https:\/\/app.goto",
+                "operationId": "ArchiveRecordingsTranscodeByReadyForTranscodeRecordingIdsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "readyForTranscodeRecordingIds",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/sessions\/{sessionId}\/events": {
+            "get": {
+                "summary": "Get WebChat Transcript Info",
+                "description": "Get information about a current or previous web-chat session based upon the sessionID. The session must have been run within an account or company that the authenticated user has access to.\n\n  Response Parameters                    \n                      \n    field        data type      description    \n    sessionId        string      The unique ID of this session    \n    startTime        ISO 8601 format*      The start time of web-chat session    \n    endTime        ISO 8601 format*      The en",
+                "operationId": "SessionsEventsBySessionIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/companies\/{companyId}\/machines": {
+            "get": {
+                "summary": "Get Machines",
+                "description": "This method retrieves information about the unattended machines associated with a specified company.\n\n  Response Parameters                    \n                      \n    field        data type      description    \n    totalNumMachines        integer      Number of machines returned.    \n    machines        map      Map of machines matching the search criteria.    \n    machineUuid        string      Un-attended machine uuid.    \n    machineName        string      Name of the un-attended machine.",
+                "operationId": "CompaniesMachinesByCompanyIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/archive\/recordings\/archived\/{recordingIDs}": {
+            "put": {
+                "summary": "Mark Recordings as Archived",
+                "description": "This method marks a list of recordings as archived by setting their archived flag to \u201ctrue.\u201d No more than 500 recordings can be marked as archived once.\n\nNote: Session recording must be enabled on the account in order to use this API method. To enable session recording, log in at https:\/\/app.gotoassist.com (link is external) and go to Configure > GoToAssist Settings > Enable Session Recording check box.\n\n  Request Parameters                    \n                      \n    field        data ty",
+                "operationId": "ArchiveRecordingsArchivedByRecordingIDsPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "recordingIDs",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PartnerSystem linksrequest": {
+                "type": "object",
+                "properties": {
+                    "systemName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "systemDomain": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userEmail": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userToken": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "callbackUrl": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "SupportedCallbacks": {
+                "type": "object",
+                "properties": {
+                    "createObject": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "searchObjects": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "associateObject": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "CreateTicketrequest": {
+                "type": "object",
+                "properties": {
+                    "sessionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userToken": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "body": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "StartWebchatSessionrequest": {
+                "type": "object",
+                "properties": {
+                    "sessionType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "sessionStatusCallbackUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "portalName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "partnerObject": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "partnerObjectUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "customerFirstName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "customerLastName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "customerEmail": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "StartScreenSharingSessionrequest": {
+                "type": "object",
+                "properties": {
+                    "sessionType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "sessionStatusCallbackUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "partnerObject": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "partnerObjectUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "customerName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "customerEmail": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "machineUuid": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "AssociateTicketrequest": {
+                "type": "object",
+                "properties": {
+                    "sessionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userToken": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "partnerObject": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            }
+        }
+    }
+}
