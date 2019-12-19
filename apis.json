@@ -1,0 +1,111 @@
+{
+    "name": "LogMeIn",
+    "description": "LogMeIn, Inc. is a provider of software as a service and cloud-based remote connectivity services for collaboration, IT management and customer engagement, founded in 2003 and based in Boston, Massachusetts.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28873-www-logmeininc-com.jpg",
+    "tags": [
+        "have api",
+        "relative data",
+        "service api",
+        "videoconferencing",
+        "webinars"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/logmein\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "GoToWebinar API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28873-www-logmeininc-com.jpg",
+            "humanURL": "http:\/\/www.LogMeInInc.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/gotowebinar-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/gotowebinar-api.json"
+                }
+            ]
+        },
+        {
+            "name": "GoToTraining API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28873-www-logmeininc-com.jpg",
+            "humanURL": "http:\/\/www.LogMeInInc.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/gototraining-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/gototraining-api.json"
+                }
+            ]
+        },
+        {
+            "name": "GoToAssist Remote Support",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28873-www-logmeininc-com.jpg",
+            "humanURL": "http:\/\/www.LogMeInInc.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/gotoassist-remote-support-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/gotoassist-remote-support.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/logmein"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.LogMeInInc.com"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/logmein"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/goto-developer.logmeininc.com\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/goto-developer.logmeininc.com\/apis\/apis-overview"
+        },
+        {
+            "type": "FAQ",
+            "url": "https:\/\/goto-developer.logmeininc.com\/faq-page"
+        },
+        {
+            "type": "Support",
+            "url": "https:\/\/goto-developer.logmeininc.com\/api-support-request-template"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/LogMeIn"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.logmeininc.com"
+        }
+    ]
+}
