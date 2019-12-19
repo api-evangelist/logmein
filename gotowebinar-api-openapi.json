@@ -1,0 +1,1447 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "GoToWebinar API",
+        "description": "TODO: Add Description",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.getgo.com\/G2W\/rest\/organizers"
+    ],
+    "paths": {
+        "\/{organizerKey}\/webinars\/{webinarKey}\/panelists": {
+            "get": {
+                "summary": "Get webinar panelists",
+                "description": "Get webinar panelists.",
+                "operationId": "WebinarsPanelistsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create Panelists",
+                "description": "Create panelists.",
+                "operationId": "WebinarsPanelistsByOrganizerKeyAndWebinarKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerkey}\/webinars": {
+            "post": {
+                "summary": "Create Webinar",
+                "description": "Create webinar.",
+                "operationId": "WebinarsByOrganizerkeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get All Webinars",
+                "description": "Returns webinars scheduled for the future for a specified organizer.",
+                "operationId": "WebinarsByOrganizerKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}": {
+            "get": {
+                "summary": "Get attendee",
+                "description": "Get attendee.",
+                "operationId": "WebinarsSessionsSessionKeyAttendeesRegistrantKeyByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}": {
+            "get": {
+                "summary": "Get Webinar",
+                "description": "Get webinar.",
+                "operationId": "WebinarsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update webinar",
+                "description": "Update webinar.",
+                "operationId": "WebinarsByOrganizerKeyAndWebinarKeyPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Cancel Webinar",
+                "description": "Cancel webinar.",
+                "operationId": "WebinarsByOrganizerKeyAndWebinarKeyDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sendCancellationEmails",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}\/questions": {
+            "get": {
+                "summary": "Get attendee questions",
+                "description": "Get attendee questions.",
+                "operationId": "WebinarsSessionsSessionKeyAttendeesRegistrantKeyQuestionsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/surveys": {
+            "get": {
+                "summary": "Get session surveys",
+                "description": "Get session surveys.",
+                "operationId": "WebinarsSessionsSessionKeySurveysByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/registrants\/{registrantKey}": {
+            "get": {
+                "summary": "Get Registrant",
+                "description": "Get registrant.",
+                "operationId": "WebinarsRegistrantsRegistrantKeyByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Registrant",
+                "description": "Delete registrant.",
+                "operationId": "WebinarsRegistrantsRegistrantKeyByOrganizerKeyAndWebinarKeyDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/meetingtimes": {
+            "get": {
+                "summary": "Get webinar meeting times",
+                "description": "Get webinar meeting times.",
+                "operationId": "WebinarsMeetingtimesByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/historicalWebinars": {
+            "get": {
+                "summary": "Historical Webinars",
+                "description": "Returns details for completed webinars for the specified organizer and completed webinars of other organizers where the specified organizer is a co-organizer.\n\nParameters:\n- organizerkey \n- fromTime\n- toTime",
+                "operationId": "HistoricalWebinarsByOrganizerKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fromTime",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "toTime",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/audio": {
+            "get": {
+                "summary": "Get audio information",
+                "description": "Get audio information.",
+                "operationId": "WebinarsAudioByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update audio information",
+                "description": "Update audio information.",
+                "operationId": "WebinarsAudioByOrganizerKeyAndWebinarKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/registrants": {
+            "get": {
+                "summary": "Get registrants",
+                "description": "Get registrants.",
+                "operationId": "WebinarsRegistrantsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create Registrant (Version 2)",
+                "description": "Create registrant (version 2).",
+                "operationId": "WebinarsRegistrantsByOrganizerKeyAndWebinarKeyPost2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/panelists\/{panelistKey}\/resendInvitation": {
+            "post": {
+                "summary": "Resend panelist invitation",
+                "description": "Resend panelist invitation.",
+                "operationId": "WebinarsPanelistsPanelistKeyResendInvitationByOrganizerKeyAndWebinarKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "panelistKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/performance": {
+            "get": {
+                "summary": "Get performance for all webinar sessions",
+                "description": "Get performance for all webinar sessions.",
+                "operationId": "WebinarsPerformanceByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/coorganizers\/{coorganizerkey}\/resendInvitation": {
+            "post": {
+                "summary": "Resend invitation",
+                "description": "Resend invitation.",
+                "operationId": "WebinarsCoorganizersCoorganizerkeyResendInvitationByOrganizerKeyAndWebinarKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "coorganizerkey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/polls": {
+            "get": {
+                "summary": "Get session polls",
+                "description": "Get session polls.",
+                "operationId": "WebinarsSessionsSessionKeyPollsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/questions": {
+            "get": {
+                "summary": "Get session questions",
+                "description": "Get session questions.",
+                "operationId": "WebinarsSessionsSessionKeyQuestionsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions": {
+            "get": {
+                "summary": "Get webinar sessions",
+                "description": "Get webinar sessions.",
+                "operationId": "WebinarsSessionsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/registrants\/fields": {
+            "get": {
+                "summary": "Get registration fields",
+                "description": "Get registration fields.",
+                "operationId": "WebinarsRegistrantsFieldsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees": {
+            "get": {
+                "summary": "Get session attendees",
+                "description": "Get session attendees.",
+                "operationId": "WebinarsSessionsSessionKeyAttendeesByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/attendees": {
+            "get": {
+                "summary": "Get attendees for all webinar sessions",
+                "description": "Get attendees for all webinar sessions.",
+                "operationId": "WebinarsAttendeesByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/coorganizers": {
+            "get": {
+                "summary": "Get co-organizers",
+                "description": "Get co-organizers.",
+                "operationId": "WebinarsCoorganizersByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create co-organizers",
+                "description": "Create co-organizers.",
+                "operationId": "WebinarsCoorganizersByOrganizerKeyAndWebinarKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/upcomingWebinars": {
+            "get": {
+                "summary": "Upcoming Webinars",
+                "description": "Returns webinars scheduled for the future for the specified organizer and webinars of other organizers where the specified organizer is a co-organizer.",
+                "operationId": "UpcomingWebinarsByOrganizerKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/sessions": {
+            "get": {
+                "summary": "Get organizer sessions",
+                "description": "Get organizer sessions.",
+                "operationId": "SessionsByOrganizerKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "fromTime",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "toTime",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/coorganizers\/{coorganizerkey}": {
+            "delete": {
+                "summary": "Delete co-organizers",
+                "description": "Delete co-organizers.",
+                "operationId": "WebinarsCoorganizersCoorganizerkeyByOrganizerKeyAndWebinarKeyDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "coorganizerkey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/panelists\/{panelistKey}": {
+            "delete": {
+                "summary": "Delete webinar panelist",
+                "description": "Delete webinar panelist.",
+                "operationId": "WebinarsPanelistsPanelistKeyByOrganizerKeyAndWebinarKeyDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "panelistKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}": {
+            "get": {
+                "summary": "Get webinar session",
+                "description": "Get webinar session.",
+                "operationId": "WebinarsSessionsSessionKeyByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/performance": {
+            "get": {
+                "summary": "Get session performance",
+                "description": "Get session performance.",
+                "operationId": "WebinarsSessionsSessionKeyPerformanceByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}\/surveys": {
+            "get": {
+                "summary": "Get attendee survey answers",
+                "description": "Get attendee survey answers.",
+                "operationId": "WebinarsSessionsSessionKeyAttendeesRegistrantKeySurveysByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}\/polls": {
+            "get": {
+                "summary": "Get attendee poll answers",
+                "description": "Get attendee poll answers.",
+                "operationId": "WebinarsSessionsSessionKeyAttendeesRegistrantKeyPollsByOrganizerKeyAndWebinarKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "webinarKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "CreateWebinarrequest": {
+                "type": "object",
+                "properties": {
+                    "subject": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "times": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timeZone": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Time1": {
+                "type": "object",
+                "properties": {
+                    "startTime": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "endTime": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CancelWebinarrequest": {
+                "type": "object",
+                "properties": {
+                    "subject": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "times": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timeZone": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ResendPanelistInvitationrequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UpdateWebinarrequest": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subject": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CreateRegistrant(version1)request": {
+                "type": "object",
+                "properties": {
+                    "lastName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CreateRegistrant(version2)request": {
+                "type": "object",
+                "properties": {
+                    "firstName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "responses": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Response": {
+                "type": "object",
+                "properties": {
+                    "questionKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "answerKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "responseText": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Create coOrganizersrequest": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "external": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "givenName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "organizerKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "surname": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CreatePanelistsrequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "DeleteWebinarPanelistrequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
