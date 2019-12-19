@@ -1,0 +1,771 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "GoToTraining API",
+        "description": "TODO: Add Description",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.getgo.com\/G2T\/rest"
+    ],
+    "paths": {
+        "\/trainings\/{trainingKey}\/start": {
+            "get": {
+                "summary": "Start Training",
+                "description": "Start training.",
+                "operationId": "TrainingsStartByTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/startUrl": {
+            "get": {
+                "summary": "Get Start Url",
+                "description": "Get start url.",
+                "operationId": "OrganizersTrainingsStartUrlByOrganizerKeyAndTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/organizers": {
+            "put": {
+                "summary": "Update Training Organizers",
+                "description": "Update training organizers.",
+                "operationId": "OrganizersTrainingsOrganizersByOrganizerKeyAndTrainingKeyPut2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrants\/{registrantKey}": {
+            "get": {
+                "summary": "Get Registrant",
+                "description": "Get registrant.",
+                "operationId": "OrganizersTrainingsRegistrantsRegistrantKeyByOrganizerKeyAndTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Cancel Registration",
+                "description": "Cancel registration.",
+                "operationId": "OrganizersTrainingsRegistrantsRegistrantKeyByOrganizerKeyAndTrainingKeyDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "registrantKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/organizers\/{organizerKey}\/trainings\/{trainingKey}": {
+            "get": {
+                "summary": "Get Sessions by Training",
+                "description": "Get sessions by training.",
+                "operationId": "ReportsOrganizersTrainingsByOrganizerKeyAndTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings": {
+            "get": {
+                "summary": "Get Trainings",
+                "description": "Get trainings.",
+                "operationId": "OrganizersTrainingsByOrganizerKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create Training",
+                "description": "Create training.",
+                "operationId": "OrganizersTrainingsByOrganizerKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrationSettings": {
+            "put": {
+                "summary": "Update Training Registration Settings",
+                "description": "Update training registration settings.",
+                "operationId": "OrganizersTrainingsRegistrationSettingsByOrganizerKeyAndTrainingKeyPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}": {
+            "get": {
+                "summary": "Get Training",
+                "description": "Get training.",
+                "operationId": "OrganizersTrainingsByOrganizerKeyAndTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Training",
+                "description": "Delete training.",
+                "operationId": "OrganizersTrainingsByOrganizerKeyAndTrainingKeyDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrants ": {
+            "get": {
+                "summary": "Get Training Registrants",
+                "description": "Get training registrants.",
+                "operationId": "OrganizersTrainingsRegistrantsByOrganizerKeyAndTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Register for Training",
+                "description": "Register for training.",
+                "operationId": "OrganizersTrainingsRegistrantsByOrganizerKeyAndTrainingKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/manageUrl": {
+            "get": {
+                "summary": "Get Management URL for Training",
+                "description": "Get management url for training.",
+                "operationId": "OrganizersTrainingsManageUrlByOrganizerKeyAndTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/trainings\/{trainingKey}\/recordings": {
+            "get": {
+                "summary": "Get Online Recordings for Training",
+                "description": "Get online recordings for training.",
+                "operationId": "TrainingsRecordingsByTrainingKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/times": {
+            "put": {
+                "summary": "Update Training Times",
+                "description": "Update training times.",
+                "operationId": "OrganizersTrainingsTimesByOrganizerKeyAndTrainingKeyPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/nameDescription": {
+            "put": {
+                "summary": "Update Training Name and Description",
+                "description": "Update training name and description.",
+                "operationId": "OrganizersTrainingsNameDescriptionByOrganizerKeyAndTrainingKeyPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/trainings\/{trainingKey}\/recordings\/{recordingId}": {
+            "get": {
+                "summary": "Get Download for Online Recordings",
+                "description": "Get download for online recordings.",
+                "operationId": "TrainingsRecordingsByTrainingKeyAndRecordingIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "trainingKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "recordingId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/organizers\/{organizerKey}\/sessions ": {
+            "post": {
+                "summary": "Get Sessions by Date Range",
+                "description": "Get sessions by date range.",
+                "operationId": "ReportsOrganizersSessionsByOrganizerKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/organizers\/{organizerKey}\/sessions\/{sessionKey}\/attendees": {
+            "get": {
+                "summary": "Get Attendance Details",
+                "description": "Get attendance details.",
+                "operationId": "ReportsOrganizersSessionsAttendeesByOrganizerKeyAndSessionKeyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Content",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "organizerKey",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sessionKey",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "UpdateTrainingRegistrationSettingsrequest": {
+                "type": "object",
+                "properties": {
+                    "disableConfirmationEmail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "disableWebRegistration": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UpdateTrainingTimesrequest": {
+                "type": "object",
+                "properties": {
+                    "times": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timeZone": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notifyTrainers": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notifyRegistrants": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Time2": {
+                "type": "object",
+                "properties": {
+                    "startDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "endDate": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CreateTrainingrequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timeZone": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "times": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "organizers": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "RegistrationSettings": {
+                "type": "object",
+                "properties": {
+                    "disableConfirmationEmail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "disableWebRegistration": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UpdateTrainingNameAndDescriptionrequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UpdateTrainingOrganizersrequest": {
+                "type": "object",
+                "properties": {
+                    "organizers": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notifyOrganizers": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "RegisterForTrainingrequest": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "givenName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "surname": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GetSessionsByDateRangerequest": {
+                "type": "object",
+                "properties": {
+                    "startDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "endDate": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
