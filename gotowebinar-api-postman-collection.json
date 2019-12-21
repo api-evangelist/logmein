@@ -1,5 +1,5 @@
 {
-    "id": "bfee5650d01afd5c04628f924e42b09f",
+    "id": "793aeeea463684ab51341a4be87eeb5f",
     "name": "GoToWebinar API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "5c8e7d23792fefabdf1f17eb538160b3",
+            "id": "c498d9b927fe20dc7316f3256e5efbff",
             "name": "Get webinar panelists",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/panelists",
             "description": "Get webinar panelists.",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "b29ef20bf9d636cd10ff62c0f53480fd",
+            "id": "92e3d158bc4d7c14e4c21d8c36d15e4a",
             "name": "Create Panelists",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/panelists",
             "description": "Create panelists.",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "2511cb28a9e79b09b865298202706667",
+            "id": "472587b0f8660e0d934cb10673d32246",
             "name": "Create Webinar",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerkey}\/webinars",
             "description": "Create webinar.",
@@ -169,11 +169,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "8a16e5b303dad3d464b8ed79aa8455ee",
+            "id": "9fb4022b0d8869b17dcd68cbd7bb372b",
             "name": "Get All Webinars",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerkey}\/webinars",
             "description": "Returns webinars scheduled for the future for a specified organizer.",
@@ -214,11 +214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "2921900438c204bdda9ed70d18179706",
+            "id": "38802e66e6276f00b168c37e3cadae26",
             "name": "Get attendee",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}",
             "description": "Get attendee.",
@@ -280,11 +280,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "5557fbcaee877eef3dce96cc53be1657",
+            "id": "768e96e6968df9047b5791e1acfd3a78",
             "name": "Get Webinar",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}",
             "description": "Get webinar.",
@@ -332,11 +332,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "16192259a83f02ee5feff2e577192856",
+            "id": "609c188274fe4d3af431d9c6111b55d9",
             "name": "Update webinar",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}",
             "description": "Update webinar.",
@@ -391,11 +391,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "15fe8e43c23089103cd935c031b93bda",
+            "id": "1cc359efb7c8e9525adc412726357228",
             "name": "Cancel Webinar",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}",
             "description": "Cancel webinar.",
@@ -457,11 +457,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "fd1eaaf37c2499b082288ebbb52f4f5b",
+            "id": "86037aba857cb9e1deae648a31f44dcd",
             "name": "Get attendee questions",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}\/questions",
             "description": "Get attendee questions.",
@@ -523,11 +523,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "bff76a81c84d812b17ef6a897ebf3727",
+            "id": "f7bb87dc037d25c23b1d2992600e5509",
             "name": "Get session surveys",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/surveys",
             "description": "Get session surveys.",
@@ -582,11 +582,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "4fd3a3f4f220c3701dc7b212e62b9d79",
+            "id": "bde2db4f1e3b135b7fb03d7309ff0c34",
             "name": "Get Registrant",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/registrants\/{registrantKey}",
             "description": "Get registrant.",
@@ -641,11 +641,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "b09d53fcd076e8984800d105bbce6639",
+            "id": "8f96267f44be87e067584679d26f6f99",
             "name": "Delete Registrant",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/registrants\/{registrantKey}",
             "description": "Delete registrant.",
@@ -700,11 +700,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "6c5f1d494983ecec8a195707a6fe023b",
+            "id": "76e4448ef7a402bc692e1be236ee7c81",
             "name": "Get webinar meeting times",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/meetingtimes",
             "description": "Get webinar meeting times.",
@@ -752,11 +752,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "22a6f796d58308f69d53aa63d85cdd6d",
+            "id": "90b14f070c73b634917c0cd9571ec756",
             "name": "Historical Webinars",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/historicalWebinars",
             "description": "Returns details for completed webinars for the specified organizer and completed webinars of other organizers where the specified organizer is a co-organizer.\n\nParameters:\n- organizerkey \n- fromTime\n- toTime",
@@ -811,11 +811,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "2be1c3289e412f0999ccdd42d9329bb0",
+            "id": "b158d7fbbe90d7a48b523b42e768293b",
             "name": "Get audio information",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/audio",
             "description": "Get audio information.",
@@ -863,11 +863,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "766300f41c928ab2c309a15dd3a75b5c",
+            "id": "fce66c85eb21bd2eef6ebb3359e89f99",
             "name": "Update audio information",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/audio",
             "description": "Update audio information.",
@@ -915,11 +915,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "7f181f90368a6d5b5e0d16f7fb064189",
+            "id": "e04610d16d5d00b165d5c2df4351fd1b",
             "name": "Get registrants",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/registrants",
             "description": "Get registrants.",
@@ -967,11 +967,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "2b06de3901cc26c9d251ddbb9c5eff32",
+            "id": "f582a9a814e94a88d96b2e82558c9219",
             "name": "Create Registrant (Version 2)",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/registrants",
             "description": "Create registrant (version 2).",
@@ -1026,11 +1026,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "5cfcad46e7ab22f7816c459913b8cc19",
+            "id": "fffe526e81b6d85a367ad81074de30ec",
             "name": "Resend panelist invitation",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/panelists\/{panelistKey}\/resendInvitation",
             "description": "Resend panelist invitation.",
@@ -1092,11 +1092,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "759759b10e75d3015061f61247699d53",
+            "id": "a030095dc55b1d6894cd54cd80c5422f",
             "name": "Get performance for all webinar sessions",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/performance",
             "description": "Get performance for all webinar sessions.",
@@ -1144,11 +1144,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "a0c9dd2b2ef36daa1f930c1d15e5ee13",
+            "id": "c792375515abddedb785ea6fcb0fe1e9",
             "name": "Resend invitation",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/coorganizers\/{coorganizerkey}\/resendInvitation",
             "description": "Resend invitation.",
@@ -1203,11 +1203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "4950170b4927065cef01a4492c2ae910",
+            "id": "0eef59aeaefae32aaf0be325c7e9d477",
             "name": "Get session polls",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/polls",
             "description": "Get session polls.",
@@ -1262,11 +1262,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "29be4f70b538babd4678c2952642eec4",
+            "id": "958f485c6a2759a6d64b6a8dc3f0fe80",
             "name": "Get session questions",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/questions",
             "description": "Get session questions.",
@@ -1321,11 +1321,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "32101bce7d35d6a43cc9021dd14c099a",
+            "id": "849d574cec6d495ec9c44bc7d7ba3db5",
             "name": "Get webinar sessions",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions",
             "description": "Get webinar sessions.",
@@ -1373,11 +1373,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "64759641697160f772dd2f67d6b24cda",
+            "id": "4e01020b01ff607453cb7e710c113f05",
             "name": "Get registration fields",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/registrants\/fields",
             "description": "Get registration fields.",
@@ -1425,11 +1425,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "86d00f4683d3d4934dea56d9aa8d252e",
+            "id": "5afcaf60b6b3a3154ae46091fb71daba",
             "name": "Get session attendees",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees",
             "description": "Get session attendees.",
@@ -1484,11 +1484,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "70fb9b490966470289e8061f3a9022d6",
+            "id": "babebd45b0eae34bf5c0afdf61374e36",
             "name": "Get attendees for all webinar sessions",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/attendees",
             "description": "Get attendees for all webinar sessions.",
@@ -1536,11 +1536,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "460f21d5bbaec2e781f32e4f58f454f7",
+            "id": "b0fed299266a0b0e1f023c696fcdecf0",
             "name": "Get co-organizers",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/coorganizers",
             "description": "Get co-organizers.",
@@ -1588,11 +1588,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "986bd0b6f08f1d2f34949cba4903f586",
+            "id": "9fd464896c95b1da7ff1287226c2e057",
             "name": "Create co-organizers",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/coorganizers",
             "description": "Create co-organizers.",
@@ -1647,11 +1647,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "ad90fe0f6894d4e562ff23ba95d37dbe",
+            "id": "1cbd54ec26410241ff055109273faf0f",
             "name": "Upcoming Webinars",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/upcomingWebinars",
             "description": "Returns webinars scheduled for the future for the specified organizer and webinars of other organizers where the specified organizer is a co-organizer.",
@@ -1692,11 +1692,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "2c6000fbf65899d334eac4e272c7733e",
+            "id": "f4c613d71a273b6166642238652017d6",
             "name": "Get organizer sessions",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/sessions",
             "description": "Get organizer sessions.",
@@ -1751,11 +1751,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "86c4533ef90bacfb982d9bf9fa98ae90",
+            "id": "a42a58b13972e6cc629d2d4b77b55289",
             "name": "Delete co-organizers",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/coorganizers\/{coorganizerkey}",
             "description": "Delete co-organizers.",
@@ -1810,11 +1810,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "c658d143a9ac3f0be201c97edc1dc6fc",
+            "id": "db686f99f637d7e8a9efed544a6624f4",
             "name": "Delete webinar panelist",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/panelists\/{panelistKey}",
             "description": "Delete webinar panelist.",
@@ -1876,11 +1876,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "c1b9239f73a4e9aa1d50c580d6572ff8",
+            "id": "7e2083e113e840159306a452466fcaaf",
             "name": "Get webinar session",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}",
             "description": "Get webinar session.",
@@ -1935,11 +1935,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "b6321181b6ea11a5031c588929195693",
+            "id": "e9be88caa22d22f2971ac952941a7840",
             "name": "Get session performance",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/performance",
             "description": "Get session performance.",
@@ -1994,11 +1994,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "1547f259c59efadfe14e2df3d04f142d",
+            "id": "c18ac08e520ef9ab0c6ed438ee113198",
             "name": "Get attendee survey answers",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}\/surveys",
             "description": "Get attendee survey answers.",
@@ -2060,11 +2060,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         },
         {
-            "id": "96ad6999622dee40168bf478be3cf06e",
+            "id": "8bc700583586473a157e328a5a4b2d05",
             "name": "Get attendee poll answers",
             "url": "httpsapi.getgo.com\/G2W\/rest\/organizers\/{organizerKey}\/webinars\/{webinarKey}\/sessions\/{sessionKey}\/attendees\/{registrantKey}\/polls",
             "description": "Get attendee poll answers.",
@@ -2126,7 +2126,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bfee5650d01afd5c04628f924e42b09f",
+            "collectionId": "793aeeea463684ab51341a4be87eeb5f",
             "rawModeData": ""
         }
     ]
