@@ -1,5 +1,5 @@
 {
-    "id": "67129d4c2778faee9310482c1daffc08",
+    "id": "423ba71832d7f8f666df33be3adbe3ee",
     "name": "GoToTraining API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "f1fd68aae1b9e55c1105cd0ee4a4c888",
+            "id": "00d07ca4f0cbc88a472ffbd9a9b0de28",
             "name": "Start Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/trainings\/{trainingKey}\/start",
             "description": "Start training.",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "1f8b1383b781c55dc1d6015f304e98c5",
+            "id": "bae40826e880cad12e4f368f13b0701e",
             "name": "Get Start Url",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/startUrl",
             "description": "Get start url.",
@@ -103,11 +103,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "52253d49b2be354fa2cc05abc4ee28dd",
+            "id": "50f61db539e0c09eef2eaaf29411b4fa",
             "name": "Update Training Organizers",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/organizers",
             "description": "Update training organizers.",
@@ -162,11 +162,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "28a4a337a1f2b95d8274164d976dc985",
+            "id": "b55516fcba15839bb5f841e5241f4f45",
             "name": "Get Registrant",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrants\/{registrantKey}",
             "description": "Get registrant.",
@@ -221,11 +221,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "9aee56692a5a623c9ee12ec6a176ed4a",
+            "id": "97a97a713551049a0873e102e9ab3748",
             "name": "Cancel Registration",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrants\/{registrantKey}",
             "description": "Cancel registration.",
@@ -280,11 +280,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "6f68794e807e50e8c5a9eb3d699cbd31",
+            "id": "991cc156083f4393ac3d2d29e44530b4",
             "name": "Get Sessions by Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/reports\/organizers\/{organizerKey}\/trainings\/{trainingKey}",
             "description": "Get sessions by training.",
@@ -332,11 +332,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "dc5750a84cf1470d6e0fd831b1e56edf",
+            "id": "2ec9afbd021f915d948670abb63d03f9",
             "name": "Get Trainings",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings",
             "description": "Get trainings.",
@@ -377,11 +377,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "86b44cc9068a8dc80917c3d030f43499",
+            "id": "078c8d36982e9326a5effecbbe9673a6",
             "name": "Create Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings",
             "description": "Create training.",
@@ -429,11 +429,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "1fc9e076f05f0f3602fc6bc2c61704fd",
+            "id": "d7a001ec9336588c7c3bddfb879fddd7",
             "name": "Update Training Registration Settings",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrationSettings",
             "description": "Update training registration settings.",
@@ -488,11 +488,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "a56fbe8208afe967b4bac43108e079ef",
+            "id": "ebbbf6ecccfe8f75061ec21c83bab868",
             "name": "Get Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}",
             "description": "Get training.",
@@ -540,11 +540,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "3add867787ab98223743cdae0ed6352e",
+            "id": "40699f153eb55fb3caf76cccbbdf290f",
             "name": "Delete Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}",
             "description": "Delete training.",
@@ -592,11 +592,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "ca60212dab5698c644e5b39f66eb5fe1",
+            "id": "bedcf800d706c36bac37addadce6dbe0",
             "name": "Get Training Registrants",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrants ",
             "description": "Get training registrants.",
@@ -644,11 +644,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "bb9ef5bd2e228fb44f2b11d0ab5f61e7",
+            "id": "be103fedf5aec42e431159b28d8d2ba9",
             "name": "Register for Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/registrants ",
             "description": "Register for training.",
@@ -703,11 +703,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "adc05ea677be2d506553e113382a40f2",
+            "id": "34e6edc91a4b90b2112131d4dfbfb2de",
             "name": "Get Management URL for Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/manageUrl",
             "description": "Get management url for training.",
@@ -755,11 +755,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "23b5e557022a089ed8192a8b01a39a9e",
+            "id": "51bfe760012b1fec88e9cb0f975ca5dc",
             "name": "Get Online Recordings for Training",
             "url": "httpsapi.getgo.com\/G2T\/rest\/trainings\/{trainingKey}\/recordings",
             "description": "Get online recordings for training.",
@@ -800,11 +800,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "6726618030a5c77ec68c51f82394db1b",
+            "id": "4dd83b6a38388dca8b14c2680924ddb4",
             "name": "Update Training Times",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/times",
             "description": "Update training times.",
@@ -859,11 +859,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "6e5d34a3d671e3c212a4df0b325c3bc6",
+            "id": "b8635e55f24d07c44077987583fb92aa",
             "name": "Update Training Name and Description",
             "url": "httpsapi.getgo.com\/G2T\/rest\/organizers\/{organizerKey}\/trainings\/{trainingKey}\/nameDescription",
             "description": "Update training name and description.",
@@ -918,11 +918,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "c770d523f367743bc9729f68f5c0ddf9",
+            "id": "6dafdf44cace52050cc5200cc654a57d",
             "name": "Get Download for Online Recordings",
             "url": "httpsapi.getgo.com\/G2T\/rest\/trainings\/{trainingKey}\/recordings\/{recordingId}",
             "description": "Get download for online recordings.",
@@ -970,11 +970,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "93db4755cf5a9fd42f32dc2692ff333d",
+            "id": "db880dac15ba43046cd2fb55f97d9876",
             "name": "Get Sessions by Date Range",
             "url": "httpsapi.getgo.com\/G2T\/rest\/reports\/organizers\/{organizerKey}\/sessions ",
             "description": "Get sessions by date range.",
@@ -1022,11 +1022,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         },
         {
-            "id": "f317ad67e80c38a5ad5d032fe2327ca3",
+            "id": "40eac4b48dc324decddbf6a77ce0137b",
             "name": "Get Attendance Details",
             "url": "httpsapi.getgo.com\/G2T\/rest\/reports\/organizers\/{organizerKey}\/sessions\/{sessionKey}\/attendees",
             "description": "Get attendance details.",
@@ -1074,7 +1074,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "67129d4c2778faee9310482c1daffc08",
+            "collectionId": "423ba71832d7f8f666df33be3adbe3ee",
             "rawModeData": ""
         }
     ]
